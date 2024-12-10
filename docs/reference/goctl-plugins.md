@@ -22,3 +22,6 @@ goctl api 提供了 plugin 命令来支持对 api 进行功能扩展，当 goctl
 
 - [goctl-helper](https://plugins.jetbrains.com/plugin/25693-goctl-helper)
   goctl-helper 是一款基于 goland 的插件，用于生成简单的api protobuf文件
+
+- [goctl-proto](https://github.com/liferod/goctl-proto)
+  通过 api 文件生成 protobuf 文件，使用该文件生成 rpc 代码，参考[这里](https://go-zero.dev/docs/tutorials/cli/rpc#goctl-rpc-protoc)
