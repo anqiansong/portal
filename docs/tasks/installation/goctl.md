@@ -55,55 +55,58 @@ $ goctl --version
 
 <DocsCard
 header="Microsoft Windows"
-href="https://github.com/zeromicro/go-zero/releases/download/tools%2Fgoctl%2Fv1.5.6/goctl-v1.5.6-windows-amd64.zip" >
+href="https://github.com/zeromicro/go-zero/releases/download/tools%2Fgoctl%2Fv1.7.3/goctl-v1.7.3-windows-amd64.zip" >
 
 <p>Windows Intel x86-64 位处理器</p>
-<a>goctl-v1.5.6-windows-amd64.zip（14.7MB）</a>
+<a>goctl-v1.7.3-windows-amd64.zip（21.7MB）</a>
 </DocsCard>
 
 <DocsCard
 header="Microsoft Windows"
-href="https://github.com/zeromicro/go-zero/releases/download/tools%2Fgoctl%2Fv1.5.6/goctl-v1.5.6-windows-386.zip" >
+href="https://github.com/zeromicro/go-zero/releases/download/tools%2Fgoctl%2Fv1.7.3/goctl-v1.7.3-windows-386.zip" >
 
 <p>Windows Intel x86-32 位处理器</p>
-<a>goctl-v1.5.6-windows-386.zip（14MB）</a>
+<a>goctl-v1.7.3-windows-386.zip（20.6MB）</a>
 </DocsCard>
 
 <DocsCard
 header="Apple macOS（ARM64）"
-href="https://github.com/zeromicro/go-zero/releases/download/tools%2Fgoctl%2Fv1.5.6/goctl-v1.5.6-darwin-arm64.tar.gz" >
+href="https://github.com/zeromicro/go-zero/releases/download/tools%2Fgoctl%2Fv1.7.3/goctl-v1.7.3-darwin-arm64.tar.gz" >
 
 <p>支持 macOS Apple 64 位处理器</p>
-<a>goctl-v1.5.6-darwin-arm64.tar.gz（14.5MB）</a>
+<a>goctl-v1.7.3-darwin-arm64.tar.gz（21.3MB）</a>
 </DocsCard>
 
 <DocsCard
 header="Apple macOS（x86-64）"
-href="https://github.com/zeromicro/go-zero/releases/download/tools%2Fgoctl%2Fv1.5.6/goctl-v1.5.6-darwin-amd64.tar.gz" >
+href="https://github.com/zeromicro/go-zero/releases/download/tools%2Fgoctl%2Fv1.7.3/goctl-v1.7.3-darwin-amd64.tar.gz" >
 
 <p>支持 macOS 64 位处理器</p>
-<a>goctl-v1.5.6-darwin-amd64.tar.gz（14.7MB）</a>
+<a>goctl-v1.7.3-darwin-amd64.tar.gz（21.7MB）</a>
 </DocsCard>
 
 <DocsCard
 header="Linux"
-href="https://github.com/zeromicro/go-zero/releases/download/tools%2Fgoctl%2Fv1.5.6/goctl-v1.5.6-linux-amd64.tar.gz" >
+href="https://github.com/zeromicro/go-zero/releases/download/tools%2Fgoctl%2Fv1.7.3/goctl-v1.7.3-linux-amd64.tar.gz" >
 
 <p>支持 Linux 64 位处理器</p>
-<a>goctl-v1.5.6-linux-amd64.tar.gz（14.8MB）</a>
+<a>goctl-v1.7.3-linux-amd64.tar.gz（21.7MB）</a>
 </DocsCard>
 
 <DocsCard
 header="Linux"
-href="https://github.com/zeromicro/go-zero/releases/download/tools%2Fgoctl%2Fv1.5.6/goctl-v1.5.6-linux-386.tar.gz" >
+href="https://github.com/zeromicro/go-zero/releases/download/tools%2Fgoctl%2Fv1.7.3/goctl-v1.7.3-linux-386.tar.gz" >
 
 <p>支持 Linux 32 位处理器</p>
-<a>goctl-v1.5.6-linux-386.tar.gz（13.9MB）</a>
+<a>goctl-v1.7.3-linux-386.tar.gz（20.3MB）</a>
 </DocsCard>
 
 </DocsCards>
 
-其他版本及操作系统可 [前往 Github](https://github.com/zeromicro/go-zero/releases) 自行选择。
+###
+:::note 注意
+以上手动安装链接更新可能延迟，如需安装最新版本或者其他版本（其他操作系统及架构），请 [前往 Github](https://github.com/zeromicro/go-zero/releases) 查看。
+:::
 
 ### 2.2 安装
 
