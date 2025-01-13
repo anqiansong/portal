@@ -54,7 +54,7 @@ go-zero 是一个集成了各种工程实践的 web 和 rpc 框架。通过弹�
 
 <DocsCard
   header="框架组件"
-  href="/docs/components"
+  href="/docs/components/limiter/token"
   icon="/icons/guide-components-icon.svg"
   hoverIcon="/icons/guide-components-icon-hover.svg"
 >

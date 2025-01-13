@@ -38,9 +38,10 @@ In main.go file the following code
 
 ```go
 func main() {
-    conn := zrpc.MustNewClient(zrpc.RpcClientConf{
-        Target: "dns:///127.0.0.1:8080",
-    })
+    clientConf:=zrpc.RpcClientConf{}
+    conf.FillDefault(&clientConf)
+    clientConf.Target = "dns:///127.0.0.1:8080"
+    conn := zrpc.MustNewClient(clientConf)
     client := greet.NewGreetClient(conn.Conn())
     resp, err := client.Ping(context.Background(), &greet.Request{})
     if err != nil {
@@ -57,9 +58,10 @@ In main.go file the following code
 
 ```go
 func main() {
-    conn := zrpc.MustNewClient(zrpc.RpcClientConf{
-        Endpoints: []string{"127.0.0.1:8080","127.0.0.2:8080"},// 直连集群时，只需要给 Endpoints 配置 rpc server的地址即可
-    })
+   clientConf:=zrpc.RpcClientConf{}
+    conf.FillDefault(&clientConf)
+    clientConf.Endpoints = []string{"127.0.0.1:8080","127.0.0.2:8080"}
+    conn := zrpc.MustNewClient(clientConf)
     client := greet.NewGreetClient(conn.Conn())
     resp, err := client.Ping(context.Background(), &greet.Request{})
     if err != nil {
@@ -76,18 +78,19 @@ In main.go file the following code
 
 ```go
 func main() {
-    conn := zrpc.MustNewClient(zrpc.RpcClientConf{
-        Etcd: discov.EtcdConf{// When discovering via the etcd service, you only need to configure Etcd
-            Hosts:              []string{"127.0.0.1:2379"},
-            Key:                "greet.rpc",
-            User:               "",// When etcd opens acl, it is filled in, so it is not deleted here for the sake of demonstration, and can be ignored if acl is not opened for actual use.
-            Pass:               "",// When etcd opens acl, it is filled in, so it is not deleted here for the sake of demonstration, and can be ignored if acl is not opened for actual use.
-            CertFile:           "",// When etcd opens acl, it is filled in, so it is not deleted here for the sake of demonstration, and can be ignored if acl is not opened for actual use.
-            CertKeyFile:        "",// When etcd opens acl, it is filled in, so it is not deleted here for the sake of demonstration, and can be ignored if acl is not opened for actual use.
-            CACertFile:         "",// When etcd opens acl, it is filled in, so it is not deleted here for the sake of demonstration, and can be ignored if acl is not opened for actual use.
-            InsecureSkipVerify: false,// When etcd opens acl, it is filled in, so it is not deleted here for the sake of demonstration, and can be ignored if acl is not opened for actual use.
-        },
-    })
+    clientConf:=zrpc.RpcClientConf{}
+    conf.FillDefault(&clientConf)// 填充默认值，比如 trace 透传等，参考服务配置说明
+    clientConf.Etcd = discov.EtcdConf{// 通过 etcd 服务发现时，只需要给 Etcd 配置即可
+        Hosts:              []string{"127.0.0.1:2379"},
+        Key:                "greet.rpc",
+        User:               "",// 当 etcd 开启 acl 时才填写，这里为了展示所以没有删除，实际使用如果没有开启 acl 可忽略
+        Pass:               "",// 当 etcd 开启 acl 时才填写，这里为了展示所以没有删除，实际使用如果没有开启 acl 可忽略
+        CertFile:           "",// 当 etcd 开启 acl 时才填写，这里为了展示所以没有删除，实际使用如果没有开启 acl 可忽略
+        CertKeyFile:        "",// 当 etcd 开启 acl 时才填写，这里为了展示所以没有删除，实际使用如果没有开启 acl 可忽略
+        CACertFile:         "",// 当 etcd 开启 acl 时才填写，这里为了展示所以没有删除，实际使用如果没有开启 acl 可忽略
+        InsecureSkipVerify: false,// 当 etcd 开启 acl 时才填写，这里为了展示所以没有删除，实际使用如果没有开启 acl 可忽略
+    }
+    conn := zrpc.MustNewClient(clientConf)
     client := greet.NewGreetClient(conn.Conn())
     resp, err := client.Ping(context.Background(), &greet.Request{})
     if err != nil {
