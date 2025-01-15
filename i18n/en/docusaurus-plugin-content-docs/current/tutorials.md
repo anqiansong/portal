@@ -12,7 +12,7 @@ The api field feature language contains syntax versions, info blocks, structural
 
 ## Targets
 
-- Learning sex
+- The learning cost is low
 - Readability
 - Expansion Freedom
 - HTTP Service 1 click to generate
