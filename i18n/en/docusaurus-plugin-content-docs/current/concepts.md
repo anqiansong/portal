@@ -84,7 +84,7 @@ Don't note **star** : capping_hands:
 Install under project directory：
 
 ```shell
-GO111MODULE=on GOPROXY=https://goproxy.cn/,direct go get -u github.com/zeromicro/go-zero
+go get -u github.com/zeromicro/go-zero
 ```
 
 ## 5. Quick Start
@@ -100,13 +100,13 @@ GO111MODULE=on GOPROXY=https://goproxy.cn/,direct go get -u github.com/zeromicro
    `goctl` read `go control`, don't read `go C-T-L`.`goctl` means not being controlled by code but to control it.The `go` does not mean `golang`.
 
    ```shell
-   GO111MODULE=on GOPROXY=https://goproxy.cn/,direct go get -u github.com/zeromicro/go-zero/tools/goctl
+   go get -u github.com/zeromicro/go-zero/tools/goctl
    ```
 
    If using version go1.16, you can install the `go install` command
 
    ```shell
-   GOPROXY=https://goproxy.cn/,direct go install github.com/zeromicro/go-zero/tools/goctl@latest
+   go install github.com/zeromicro/go-zero/tools/goctl@latest
    ```
 
    Make sure goctl is executable

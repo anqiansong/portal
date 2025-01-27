@@ -17,14 +17,3 @@ $ mkdir <project name> && cd <project name> # project name is specific value
 $ go mod init <module name> # module name is specific value
 $ github.com/zeromicro/go-zero@latest
 ```
-
-## FAQ
-
-### 1. After GOROXY is set, dependencies or pull?
-
-Confirm whether `GO111MODULE` is on
-
-```shell
-$ go env -w GO111MODULE=on
-$ go env -w GOPROXY=https://goproxy.cn,direct
-```

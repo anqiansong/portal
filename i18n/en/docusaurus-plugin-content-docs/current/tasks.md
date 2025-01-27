@@ -132,31 +132,6 @@ $ go version
 </TabItem>
 </Tabs>
 
-## 3. Configuration
-
-### 3.1 GO111MODULE ON
-
-After go 1.11, it is recommended that the `GO111MODULE` value be set to `on`in order to avoid unnecessary errors in the follow-up pull dependency.
-
-```bash
-$ go env -w GO111MODULE=on
-```
-
-### 3.2 Configure Proxy
-
-```bash
-$ go env -w GOPROXY=https://goproxy.cn,direct
-```
-
-### 3.3 View configuration
-
-```bash
-$ go env GO111MODULE
-on
-$ go env GOPROXY
-https://goproxy.cn,direct
-```
-
 ## References
 
 - <a href="https://zh.wikipedia.org/zh-cn/Go" tagret="_blank">Wikipedia - Go</a>
