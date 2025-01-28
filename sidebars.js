@@ -211,6 +211,7 @@ module.exports = {
                 'tutorials/go-zero-configuration/service',
                 'tutorials/go-zero-configuration/log',
                 'tutorials/go-zero-configuration/prometheus',
+                'tutorials/go-zero-configuration/auto-validation',
             ],
         },
         {
