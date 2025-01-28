@@ -1,6 +1,6 @@
 ---
 title: HTTP gateway
-slug: /docs/tutorials/gateway/HTTP
+slug: /docs/tutorials/gateway/http
 ---
 
 # Gateway：HTTP-to-HTTP 路由功能

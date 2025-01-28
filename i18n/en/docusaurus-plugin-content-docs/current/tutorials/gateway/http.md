@@ -1,6 +1,6 @@
 ---
 title: HTTP gateway
-slug: /docs/tutorials/gateway/HTTP
+slug: /docs/tutorials/gateway/http
 ---
 
 # HTTP-to-HTTP in go-zero Gateway
