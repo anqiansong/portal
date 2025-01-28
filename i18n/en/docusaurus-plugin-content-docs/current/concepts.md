@@ -75,7 +75,7 @@ go-zero is an integrated web and rpc framework with various engineering practice
 
 As shown below, we guarantee high availability of overall services at multiple levels：
 
-<Image src={require('./resource/concepts/resilience.jpg').default} alt="弹性设计" />
+<Image src={require('./resource/concepts/resilience.png').default} alt="弹性设计" />
 
 Don't note **star** : capping_hands:
 
