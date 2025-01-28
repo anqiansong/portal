@@ -318,6 +318,7 @@ module.exports = {
             collapsed: false,
             items: [
                 'tutorials/gateway/grpc',
+                'tutorials/gateway/http',
             ],
         },
         {
