@@ -1,6 +1,6 @@
 ---
-title: go-zero configuration overview
-sidebar_label: go-zero configuration overview
+title: configuration overview
+sidebar_label: configuration overview
 slug: /docs/tutorials/go-zero/configuration/overview
 ---
 
