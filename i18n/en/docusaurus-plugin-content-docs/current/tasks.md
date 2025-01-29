@@ -26,37 +26,37 @@ Go Website below：
 ## 1. Downloads
 
 :::note NOTE
-Here we take the `1.19` version as an example, and it is **not recommended** to install a specific version. Developers can choose according to their needs. For more versions, go to [Go to Golang](https://go.dev/dl/) to choose by yourself.
+Here we take the `1.23` version as an example, and it is **not recommended** to install a specific version. Developers can choose according to their needs. For more versions, go to [Go to Golang](https://go.dev/dl/) to choose by yourself.
 :::
 
 <DocsCards>
 
 <DocsCard
 header="Microsoft Windows"
-href="https://go.dev/dl/go1.19.4.windows-amd64.msi">
+href="https://go.dev/dl/go1.23.5.windows-amd64.msi">
 <p>Supported Windows 7 and beyond, Intel 64-bit processor</p>
-<a>go1.19.4.windows-amd64.msi（135MB）</a>
+<a>go1.23.5.windows-amd64.msi（135MB）</a>
 </DocsCard>
 
 <DocsCard
 header="Apple macOS（ARM64）"
-href="https://go.dev/dl/go1.19.4.darwin-arm64.pkg">
+href="https://go.dev/dl/go1.23.5.darwin-arm64.pkg">
 <p>Support macOS 11 and later, Apple 64 bit processor</p>
-<a>go1.19.4.darwin-arm64.pkg（139MB）</a>
+<a>go1.23.5.darwin-arm64.pkg（139MB）</a>
 </DocsCard>
 
 <DocsCard
 header="Apple macOS（x86-64）"
-href="https://go.dev/dl/go1.19.4.darwin-amd64.pkg">
+href="https://go.dev/dl/go1.23.5.darwin-amd64.pkg">
 <p>Supported macOS 10.13 and later, 64 bit processor</p>
-<a>go1.19.4.darwin-amd64.pkg（145MB）</a>
+<a>go1.23.5.darwin-amd64.pkg（145MB）</a>
 </DocsCard>
 
 <DocsCard
 header="Linux"
-href="https://go.dev/dl/go1.19.4.linux-amd64.tar.gz">
+href="https://go.dev/dl/go1.23.5.linux-amd64.tar.gz">
 <p>Support Linux 2.6.32 and later, Intel 64-bit processor</p>
-<a>go1.19.4.linux-amd64.tar.gz（142MB）</a>
+<a>go1.23.5.linux-amd64.tar.gz（142MB）</a>
 </DocsCard>
 
 </DocsCards>
@@ -71,7 +71,7 @@ Other versions and operating systems can [to go to the official network](https:/
 1 Delete the `/usr/local/go` folder (if available) to remove any previous Go installation and then compress the just downloaded archive to `/usr/local`, Create a new Go directory in `/usr/local/go`：
 
 ```bash
-$ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.19.4.linux-amd64.tar.gz
+$ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.5.linux-amd64.tar.gz
 ```
 
 ::NOTE
