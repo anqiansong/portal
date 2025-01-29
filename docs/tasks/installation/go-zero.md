@@ -22,9 +22,10 @@ $ go get -u github.com/zeromicro/go-zero@latest
 
 ### 1. 设置了 GOPROXY 后，依赖还是拉不下来？
 
-确认 `GO111MODULE` 是否开启
+确保设置 `GOPROXY` 的方式是正确的，并通过 `go env GOPROXY` 命令确认设置成功，如下：
 
 ```shell
-$ go env -w GO111MODULE=on
 $ go env -w GOPROXY=https://goproxy.cn,direct
+$ go env GOPROXY
+https://goproxy.cn,direct
 ```

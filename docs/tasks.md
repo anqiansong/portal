@@ -26,37 +26,37 @@ Go 官网概括如下：
 ## 1. 下载
 
 :::note 注意
-这里以 `1.19.4` 版本为例子，并 **不推荐** 安装具体版本，开发者可根据需要自行选择，更多版本可前往 [前往官网](https://go.dev/dl/) 自行选择。
+这里以 `1.23.5` 版本为例子，并 **不推荐** 安装具体版本，开发者可根据需要自行选择，更多版本可前往 [前往官网](https://go.dev/dl/) 自行选择。
 :::
 
 <DocsCards>
 
 <DocsCard
 header="Microsoft Windows"
-href="https://go.dev/dl/go1.19.4.windows-amd64.msi" >
+href="https://go.dev/dl/go1.23.5.windows-amd64.msi" >
 <p>支持 Windows 7 及以后，Intel 64 位处理器</p>
-<a>go1.19.4.windows-amd64.msi（135MB）</a>
+<a>go1.23.5.windows-amd64.msi</a>
 </DocsCard>
 
 <DocsCard
 header="Apple macOS（ARM64）"
-href="https://go.dev/dl/go1.19.4.darwin-arm64.pkg" >
+href="https://go.dev/dl/go1.23.5.darwin-arm64.pkg" >
 <p>支持 macOS 11 及以后，Apple 64 位处理器</p>
-<a>go1.19.4.darwin-arm64.pkg（139MB）</a>
+<a>go1.23.5.darwin-arm64.pkg</a>
 </DocsCard>
 
 <DocsCard
 header="Apple macOS（x86-64）"
-href="https://go.dev/dl/go1.19.4.darwin-amd64.pkg" >
+href="https://go.dev/dl/go1.23.5.darwin-amd64.pkg" >
 <p>支持 macOS 10.13 及以后，64 位处理器</p>
-<a>go1.19.4.darwin-amd64.pkg（145MB）</a>
+<a>go1.23.5.darwin-amd64.pkg</a>
 </DocsCard>
 
 <DocsCard
 header="Linux"
-href="https://go.dev/dl/go1.19.4.linux-amd64.tar.gz" >
+href="https://go.dev/dl/go1.23.5.linux-amd64.tar.gz" >
 <p>支持 Linux 2.6.32 及以后，Intel 64 位处理器</p>
-<a>go1.19.4.linux-amd64.tar.gz（142MB）</a>
+<a>go1.23.5.linux-amd64.tar.gz</a>
 </DocsCard>
 
 </DocsCards>
@@ -128,25 +128,15 @@ href="https://go.dev/dl/go1.19.4.linux-amd64.tar.gz" >
 
 ## 3. 配置
 
-### 3.1 GO111MODULE 开启
-
-在 go 1.11 以后建议将 `GO111MODULE` 值显式设置为 `on`，以免后续拉取依赖出现一些不必要的错误。
-
-```bash
-$ go env -w GO111MODULE=on
-```
-
-### 3.2 配置 Proxy
+### 3.1 配置 Proxy
 
 ```bash
 $ go env -w GOPROXY=https://goproxy.cn,direct
 ```
 
-### 3.3 查看配置
+### 3.2 查看配置
 
 ```bash
-$ go env GO111MODULE
-on
 $ go env GOPROXY
 https://goproxy.cn,direct
 ```

@@ -27,14 +27,6 @@ $ go version
 
 ### 1.2. go [get, install]
 
-- 如果 go 版本在 `1.16` 以前，则使用如下命令安装：
-
-  ```bash
-  $ GO111MODULE=on go get -u github.com/zeromicro/go-zero/tools/goctl@latest
-  ```
-
-- 如果 go 版本在 `1.16` 及以后，则使用如下命令安装：
-
   ```bash
   $ go install github.com/zeromicro/go-zero/tools/goctl@latest
   ```
