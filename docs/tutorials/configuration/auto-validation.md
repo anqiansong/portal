@@ -1,6 +1,6 @@
 ---
-title: Log Configuration
-sidebar_label: Log Configuration
+title: Auto Validation
+sidebar_label: Auto Validation
 slug: /docs/tutorials/go-zero/configuration/auto-validation
 ---
 

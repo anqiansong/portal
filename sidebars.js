@@ -207,11 +207,11 @@ module.exports = {
             label: 'go-zero 配置',
             collapsed: false,
             items: [
-                'tutorials/go-zero-configuration/overview',
-                'tutorials/go-zero-configuration/service',
-                'tutorials/go-zero-configuration/log',
-                'tutorials/go-zero-configuration/prometheus',
-                'tutorials/go-zero-configuration/auto-validation',
+                'tutorials/configuration/overview',
+                'tutorials/configuration/service',
+                'tutorials/configuration/log',
+                'tutorials/configuration/prometheus',
+                'tutorials/configuration/auto-validation',
             ],
         },
         {
