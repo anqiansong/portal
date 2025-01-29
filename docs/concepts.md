@@ -80,7 +80,7 @@ go-zero 是一个集成了各种工程实践的包含 web 和 rpc 框架，有�
 如下图，我们从多个层面保障了整体服务的高可用：
 
 <Image
-      src={require('./resource/concepts/resilience.png').default}
+      src={require('./resource/concepts/resilience.jpg').default}
       alt="弹性设计"
 />
 
