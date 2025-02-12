@@ -624,7 +624,7 @@ Global Flags:
 | table                   | []string              | YES                     | `nil`                  | 需要生成代码的表                                                                                                                                                                    |
 | url                     | string                | YES                     | 空字符串                   | 数据库连接，格式{{username}}:{{password}}@tcp({{host_port}})/{{db}}                                                                                                                 |
 | ignore-columns          | []string              | NO                      | `nil`                  | 需要忽略的字段，插入或者更新时需要忽略的字段，如 `create_time`                                                                                                                                      |
-| prefix                  | string                | NO                      | `cache`                | 自定义缓存 key 前缀，默认为 cache                                                                                                                                                      |
+| prefix                  | string                | NO                      | `cache`                | 自定义缓存 key 前缀，默认为 `cache`,goctl 版本需要大于 1.7.6                                                                                                                                 |
 | strict                  | boolean               | NO                      | `false`                | 是否是严格模式，如果是严格模式下，会对 `unsigned` 修饰的字段转换为对应的数据类型，主要针对数值型，例如：如果数据库中列为 `bigint` 类型，如果为`unsigned` 修饰则对应的 golang 数据类型就为 `int64`，否则为 `uint64`，如果 strict 为 false，则不关注 `unsigned` 修饰 |
 
 #### goctl model mysql ddl 指令
@@ -670,7 +670,7 @@ Global Flags:
 | style                   | string                  | NO                      | `gozero`               | 输出文件和目录的命名风格格式化符号，详情见<a href="/docs/tutorials/cli/style" target="_blank"> 文件风格</a>                                                                                          |
 | ignore-columns          | []string                | NO                      | `nil`                  | 需要忽略的字段，插入或者更新时需要忽略的字段，如 `create_time`                                                                                                                                      |
 | strict                  | boolean                 | NO                      | `false`                | 是否是严格模式，如果是严格模式下，会对 `unsigned` 修饰的字段转换为对应的数据类型，主要针对数值型，例如：如果数据库中列为 `bigint` 类型，如果为`unsigned` 修饰则对应的 golang 数据类型就为 `int64`，否则为 `uint64`，如果 strict 为 false，则不关注 `unsigned` 修饰 |
-| prefix                  | string                  | NO                      | `cache`                | 自定义缓存 key 前缀，默认为 cache                                                                                                                                                      |
+| prefix                  | string                  | NO                      | `cache`                | 自定义缓存 key 前缀，默认为 `cache`, goctl 版本需要大于 1.7.6                                                                                                                                |
 
 #### MySQL 类型映射关系(稳定版本)
 
